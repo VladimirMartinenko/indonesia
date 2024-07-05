@@ -1,0 +1,134 @@
+.experience {
+background: url(../../images/hugo.jpeg)no-repeat center/cover;
+display: block;
+position: relative;
+
+  // .experience__container
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  // .experience__video
+
+  &__video {
+    padding-top: 140px;
+    max-width: 1056px;
+    z-index: 2;
+  }
+}
+.experience::after {
+  content: "";
+  background: #000000;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+.video {
+
+  // .video__title
+
+  &__title {
+    font-size: 42px;
+    line-height: 50 /42 *100%;
+    text-align: center;
+    padding-bottom: 67px;
+    color: #ffffff;
+  }
+
+  // .video__film
+
+  &__film {
+  }
+
+  // .video__img
+
+  &__img {
+    @include media-mx(1200){
+     width: 100%;
+    }
+  }
+}
+.title {
+}
+.experience-bottom {
+  z-index: 2;
+  padding-top: 125px;
+  padding-bottom:  210px;
+  display: flex;
+  gap: 75px;
+  @include media-mx(911){
+    flex-direction: column;
+  }
+
+
+  // .experience-bottom__wrapper
+
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    max-width: 610px;
+    gap: 41px ;
+    @include media-mx(786){
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  // .experience-bottom__foto
+
+  &__foto {
+    width: 234px;
+    height: 151px;
+    @include media-mx(786){
+      width: 100%;
+      height: auto;
+     }
+  }
+
+  // .experience-bottom__img
+
+  &__img {
+    width: 234px;
+    height: 151px;
+    object-fit: cover;
+    @include media-mx(786){
+      width: 100%;
+     }
+  }
+
+  // .experience-bottom__column
+
+  &__column {
+    @include media-mx(786){
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+.column {
+
+  // .column__tittle
+
+  &__tittle {
+  }
+
+  // .column__text
+
+  &__text {
+    max-height: 300px;
+    overflow: auto;
+  }
+}
+.title-column {
+}
+.text {
+}

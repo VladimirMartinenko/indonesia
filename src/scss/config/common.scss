@@ -1,0 +1,45 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.title-column {
+  font-family:DMSans;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 41 / 26 * 100%;
+  color: #ffff;
+}
+.text {
+  font-family:DMSans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28 / 18 * 100%;
+  @include media-mx(768){
+    font-size: 16px;
+    line-height: 24 /16 *100%;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-family: DMSans;
+  font-weight: 700;
+  line-height: 23 / 18 * 100%;
+  color: #ffff;
+  width: 180px;
+  height: 59px;
+  background: #DD2242;
+  border-radius: 50px;
+  @include media-mx(768){
+    width: 100%;
+  }
+}
+.title{
+  font-family: DMSans;
+  font-weight: 700;
+}
+
+.show-text {
+  display: none;
+}
