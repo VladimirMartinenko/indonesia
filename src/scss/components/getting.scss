@@ -1,0 +1,146 @@
+.getting {
+  padding-top: 119px;
+  padding-bottom: 117px;
+  background: #DCE8F2;
+
+  // .getting__container
+
+  &__container {
+  }
+
+  // .getting__content
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.content {
+
+  &__main {
+    font-size: 60px;
+    line-height: 90 /60 *100%;
+    padding-bottom: 44px;
+    @include media-mx(768){
+      font-size: 40px;
+      line-height: 46 /40 *100%;
+    }
+  }
+
+  // .content__title
+
+  &__title {
+    font-size: 26px;
+    line-height: 41 /26 *100%;
+    @include media-mx(768){
+      font-size: 20px;
+      line-height: 33 /22 *100%;
+    }
+    
+  }
+
+  // .content__wrap
+
+  &__wrap {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    gap: 44px ;
+  }
+
+  // .content__number
+
+  &__number {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #DD2242;
+    width: 58px;
+    height: 58px;
+    border-radius: 50px;
+    color: #ffffff;
+    font-family:DMSans;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 38 /26 *100%;
+  }
+
+  // .content__text
+
+  &__text {
+    max-height: 700px;
+    overflow: auto;
+    margin-left: 29px;
+    padding-left: 73px;
+    padding-top: 29px;
+    &:not(:last-of-type){
+      border-left: 2px solid #15143944;
+    }
+  }
+}
+.title {
+}
+.text {
+}
+
+.experience-bottom {
+
+  // .experience-bottom__wrapper
+
+  &__wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @include media-mx(768){
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  // .experience-bottom__foto
+
+  &__foto {
+  }
+
+  // .experience-bottom__img
+
+  &__img {
+  }
+
+  // .experience-bottom__column
+
+  &__column {
+  }
+}
+.column {
+
+  // .column__tittle
+
+  &__tittle {
+  }
+
+  // .column__text
+
+  &__text {
+  }
+}
+.title-column {
+  
+}
+.getting {
+
+  // .getting__btn
+
+  &__btn {
+    margin-top: 16px;
+    margin-left: 93px;
+   
+    @include media-mx(768){
+      margin-left: 0px;
+    }
+  }
+}
+.btn {
+}
+.color{
+  color: #000000;
+}
