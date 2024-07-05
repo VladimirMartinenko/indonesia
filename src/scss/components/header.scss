@@ -1,0 +1,340 @@
+.header {
+  width: 100%;
+  transition: background-color var(--bs-transition);
+  z-index: 50;
+  background-image: url(../../images/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include media-mx(768){
+    padding: 0px 30px 0px 30px ;
+  }
+}
+
+
+.header {
+
+  // .header__top
+
+  &__top {
+    padding-top: 28px;
+    max-width: 1870px;
+    display: flex;
+    align-items: center;
+    gap:90px;
+    @include media-mx(991){
+      gap:30px;
+    }
+    @include media-mx(768){
+      justify-content: space-between;
+      padding: 28px 0 0 0;
+    }
+  }
+
+  // .header__logo
+
+  &__logo {
+  }
+
+  // .header__menu
+
+  &__menu {
+  }
+
+  // .header__content
+
+  &__content {
+    margin: 195px 0px 0px 277px;
+    @include media-mx(991){
+      margin: 195px 0px 0px 50px;
+    }
+    @include media-mx(768){
+      margin: 60px 0px 0px 0px;
+    }
+  }
+}
+.logo {
+display: flex;
+align-items:end;
+  // .logo__img
+
+  &__img {
+    width: 24px;
+    height: 51px;
+  }
+
+  // .logo__position
+
+  &__position {
+    display: block;
+    padding-left: 6px;
+  }
+
+  // .logo__top
+
+  &__top {
+    font-family:Roboto;
+    font-weight: 900;
+    font-size: 24px;
+    color: #ffff;
+    line-height: 13px;
+  }
+
+  // .logo__bottom
+
+  &__bottom {
+    font-family:Roboto;
+    font-weight: 900;
+    font-size: 24px;
+    color: #ffff;
+  }
+}
+.menu {
+  @include media-mx(768){
+    transform: translate(0px, -100%);
+    transition: transform 0.8s ease 0s;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    padding: 0px 10px 0px 10px;
+    background-color: rgba(128, 128, 128, 0.8);
+
+    .menu-open &{
+      transform: translate(0px, 0px);
+    }
+    }
+
+  // .menu__list
+
+  &__list {
+    display: flex;
+    gap:65px;
+     @include media-mx(991){
+      gap:40px;
+    }
+    @include media-mx(768){
+      display: block;
+      margin-top: 100px;
+    }
+
+   
+  }
+
+  // .menu__item
+
+  &__item {
+    @include media-mx(768){
+      margin-bottom: 30px;
+    }
+  }
+
+  // .menu__link
+
+  &__link {
+    font-size: 18px;
+    font-family: DMSans;
+    font-weight: 700;
+    line-height: 23 / 14 * 100%;
+    color: #ffff;
+    @include media-mx(768){
+      font-size: 40px;
+      display: block;
+      text-align: center;
+    }
+  }
+}
+.content {
+  
+
+  // .content__container
+
+  &__container {
+  }
+
+  // .content__tittle
+
+  &__tittle {
+    font-family:Roboto;
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 130 / 120 * 100%;
+    color: #ffff;
+    @include media-mx(768){
+      font-size: 59px;
+    }
+  }
+
+  // .content__btn
+
+  &__btn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 271px;
+    height: 82px;
+    border-radius: 50px;
+    font-family:DMSans;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30 / 20 * 100%;
+    color: #ffff;
+    background-color: #DD2242;
+    @include media-mx(768){
+      width: 100%;
+    }
+  }
+}
+.header-bottom {
+margin: 241px 0px 0px 0px;
+display: flex;
+justify-content: end;
+align-items: end;
+
+@include media-mx(1200){
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+};
+@include media-mx(768){
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: 54px 0px 0px 0px;
+};
+  // .header-bottom__wrapper
+
+  &__wrapper {
+    width: 1225px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.6);
+    @include media-mx(1200){
+      width: 100%;
+    }
+    @include media-mx(768){
+      flex-direction: column;
+      align-items: start;
+      height: 472px;
+      width: 100%;
+      padding-left: 32px
+     };
+  }
+
+  // .header-bottom__column
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 210px;
+  }
+
+  // .header-bottom__hotel
+
+  &__hotel {
+    @include media-mx(768){
+      width: 100%;
+    }
+  }
+}
+.column {
+
+  // .column__number
+
+  &__number {
+    font-family:Roboto;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 18 / 16 * 100%;
+    color: #DD2242;
+  }
+
+  // .column__tittle
+
+  &__tittle {
+  }
+
+  // .column__text
+
+  &__text {
+    color: #939393;
+    @include media-mx(768){
+      font-size: 16px;
+    }
+  }
+}
+.hotel {
+
+  // .hotel__img
+
+  &__img {
+    @include media-mx(768){
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+
+
+// Burger
+
+.icon-menu {
+  display: none;
+
+  @include media-mx(768) {
+    display: block;
+    position: fixed;
+    right: 30px;
+    width: rem(30);
+    height: rem(18);
+    cursor: pointer;
+    z-index: 5;
+
+    span,
+    &::before,
+    &::after {
+      content: "";
+      transition: all 300ms ease 0ms;
+      right: 0;
+      position: absolute;
+      width: 100%;
+      height: rem(2);
+      background-color: #ffff;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    span {
+      top: calc(50% - rem(1));
+    }
+
+    .menu-open & {
+      span {
+        width: 0;
+      }
+
+      &::before {
+        top: calc(50% - rem(1));
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        bottom: calc(50% - rem(1));
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
