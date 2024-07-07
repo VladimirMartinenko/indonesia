@@ -50,6 +50,7 @@
     align-items: center;
     gap: 50px;
     @include media-mx(911) {
+      margin-left: 0px;
       width: 100%;
       padding-top: 36px;
       flex-direction: column;
@@ -122,9 +123,7 @@
 
   &__item {
   }
-
   // .menu__link
-
   &__link {
     font-size: 18px;
     font-family: DMSans;
@@ -152,7 +151,6 @@ color: #ffffff;
   right: 70px;
   @include media-mx(911) {
     bottom: 440px;
-    right: 41%;
 
   }
 }

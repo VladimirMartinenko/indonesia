@@ -2,15 +2,13 @@
   width: 100%;
   transition: background-color var(--bs-transition);
   z-index: 50;
-  background-image: url(../../images/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1.jpg);
+  background-image: url(https://vladimirmartinenko.github.io/indonesia/images/diego-gutierrez-NRn5rrBnH8w-unsplash\ 1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   @include media-mx(768){
     padding: 0px 30px 0px 30px ;
   }
 }
-
-
 .header {
 
   // .header__top
@@ -46,6 +44,9 @@
     margin: 195px 0px 0px 277px;
     @include media-mx(991){
       margin: 195px 0px 0px 50px;
+    }
+    @include media-mx(850){
+      margin: 195px 0px 0px 0px;
     }
     @include media-mx(768){
       margin: 60px 0px 0px 0px;
@@ -118,8 +119,6 @@ align-items:end;
       display: block;
       margin-top: 100px;
     }
-
-   
   }
 
   // .menu__item
@@ -146,8 +145,6 @@ align-items:end;
   }
 }
 .content {
-  
-
   // .content__container
 
   &__container {
@@ -165,7 +162,6 @@ align-items:end;
       font-size: 59px;
     }
   }
-
   // .content__btn
 
   &__btn {

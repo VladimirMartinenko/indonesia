@@ -6,7 +6,7 @@
   }
 }
 .information {
-background: url(../../images/Rectangle\ 9.jpg) no-repeat center/cover;
+background-image: url(https://vladimirmartinenko.github.io/indonesia/images/Rectangle\ 9.jpg) no-repeat center/cover;
 
   &__background{
     background-color:  rgb(1, 10, 32, 0.97);
@@ -100,7 +100,10 @@ background: url(../../images/Rectangle\ 9.jpg) no-repeat center/cover;
 
 
 .bottom {
-  background: url(../../images/Rectangle\ 10.jpg) no-repeat center/cover;
+  background-image: url(https://vladimirmartinenko.github.io/indonesia/images/Rectangle\ 10.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .information-bottom{
